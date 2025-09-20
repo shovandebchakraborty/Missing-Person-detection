@@ -1,0 +1,205 @@
+/* General */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Dashboard */
+.dashboard header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-options {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.option-card {
+  flex: 1;
+  min-width: 220px;
+  text-decoration: none;
+  background: #f9f9ff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 0.2s, background 0.2s;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+  background: #eef4ff;
+}
+
+.option-card .icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+}
+
+.file-input {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.file-input input {
+  display: none;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #357ab8;
+}
+
+/* Back link */
+.back-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------- */
+/* Responsive Adjustments */
+/* ---------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .option-card {
+    min-width: 200px;
+    padding: 18px;
+  }
+
+  .option-card .icon {
+    font-size: 32px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    margin-top: 15px;
+    padding: 16px;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .dashboard-options {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .option-card {
+    min-width: 100%;
+    padding: 15px;
+  }
+
+  .option-card .icon {
+    font-size: 28px;
+  }
+
+  input {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .back-link {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
